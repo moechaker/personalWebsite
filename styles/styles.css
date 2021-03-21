@@ -109,6 +109,10 @@ a {
     letter-spacing: initial;
 }
 
+#largeInfo {
+    flex-direction: column !important;
+}
+
 #header .hamburger {
     height: 60px;
     width: 60px;
@@ -191,7 +195,7 @@ a {
 /* End of Header Section */
 
 #section1 {
-    background-image: url(images/img2.jpg);
+    background-image: url(/images/img2.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -363,7 +367,7 @@ a {
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(images/img3.jpg);
+    background-image: url(/images/img3.jpg);
     background-size: cover;
     margin: 15px 5%;
     position: relative;
@@ -769,8 +773,11 @@ img {
         flex-direction: row-reverse;
     }
 
+
     #projects .all-projects .project-info {
         height: 100%;
+        flex-direction: column !important;
+
     }
 
     #projects .all-projects .project-image {
