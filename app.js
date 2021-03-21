@@ -12,7 +12,8 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res){
     res.render("home");
 });
-
-app.listen(1000, function () {
-    console.log("The Personal Website Server Has Started!!");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    // console.log('The Personal Website Server Has Started On ${port}');
+    console.log(`The Personal Website Server Has Started on ${port}`)
   });
